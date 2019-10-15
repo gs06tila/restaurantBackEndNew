@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/ResturantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/ResturantdatabaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/RestaurantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/ResturantdatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,6 +33,10 @@
   <component name="ProjectId" id="1SEmHl2blPNtYiI4x0jB7wg4V0j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -52,7 +57,7 @@
   <component name="RunManager">
     <configuration name="ResturantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="resturant" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="se.experis.resturant.ResturantdatabaseApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.experis.resturant.RestaurantdatabaseApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -68,8 +73,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571137043901</updated>
-      <workItem from="1571137048971" duration="454000" />
+      <workItem from="1571137048971" duration="3730000" />
     </task>
+    <task id="LOCAL-00001" summary="init and Restaurant class">
+      <created>1571137593129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571137593129</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +98,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init and Restaurant class" />
+    <option name="LAST_COMMIT_MESSAGE" value="init and Restaurant class" />
   </component>
 </project>
