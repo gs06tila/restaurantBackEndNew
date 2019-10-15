@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RestaurantBackEnd" />
+  </component>
+  <component name="ProjectId" id="1SEmHl2blPNtYiI4x0jB7wg4V0j" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ResturantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="resturant" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.experis.resturant.ResturantApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+</project>
