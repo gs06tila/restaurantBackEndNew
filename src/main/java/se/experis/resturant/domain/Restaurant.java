@@ -2,6 +2,7 @@ package se.experis.resturant.domain;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Restaurant {
@@ -98,5 +99,17 @@ public class Restaurant {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "restaurant")
+    private List<Review> reviews;
+
+    //Getters and setters
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
     }
 }

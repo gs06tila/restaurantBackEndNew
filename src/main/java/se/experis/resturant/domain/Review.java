@@ -10,7 +10,7 @@ public class Review {
     private long reviewId;
 
     @Column(precision=2, scale=1)
-    private float rating;
+    private double rating;
 
     @Column(columnDefinition = "TEXT")
     private String reviewText;
@@ -23,20 +23,24 @@ public class Review {
     @Temporal(TemporalType.TIMESTAMP)
     private java.util.Date updatedAt;
 
+
     public Review() {}
 
-    public Review(float rating, String reviewText, Date createdAt, Date updatedAt) {
+    public Review(double rating, String reviewText, Date createdAt, Date updatedAt, Restaurant restaurant) {
+        super();
+        reviewId=0;
         this.rating = rating;
         this.reviewText = reviewText;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+        this.restaurant = restaurant;
     }
 
-    public float getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(float rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
@@ -62,5 +66,18 @@ public class Review {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurant")
+    private Restaurant restaurant;
+
+    //Getter and setter
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
     }
 }
