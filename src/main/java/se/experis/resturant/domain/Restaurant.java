@@ -7,7 +7,7 @@ import java.util.List;
 @Entity
 public class Restaurant {
     @Id //Define primary key
-    @GeneratedValue(strategy = GenerationType.AUTO) //Define automatically generated ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //Define automatically generated ID
     private long restaurantId;
 
     @Column(length=128)
@@ -36,6 +36,7 @@ public class Restaurant {
 
     public Restaurant(String name, String address, String category, String description, int active, java.util.Date createdAt, java.util.Date updatedAt) {
         super();
+        restaurantId=0;
         this.name = name;
         this.address = address;
         this.category = category;
@@ -111,5 +112,17 @@ public class Restaurant {
 
     public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "owner")
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
