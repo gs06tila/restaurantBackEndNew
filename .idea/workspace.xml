@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Review.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571137043901</updated>
       <workItem from="1571137048971" duration="4765000" />
+      <workItem from="1571145766100" duration="5822000" />
     </task>
     <task id="LOCAL-00001" summary="init and Restaurant class">
       <created>1571137593129</created>
@@ -104,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
