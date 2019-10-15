@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/resturant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/RestaurantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/RestaurantRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,23 +24,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="restaurang" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="restaurang" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="restaurang" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="restaurangdb: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileTemplateManagerImpl">

@@ -15,7 +15,7 @@ public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
     //List<Restaurant> findByNameOrCategory(String name);
 
     // Fetch cars by name and sort by category
-   // List<Restaurant> findByNameOrderByCategoryAsc(String brand);
+    // List<Restaurant> findByNameOrderByCategoryAsc(String brand);
 
     /*  // Fetch cars by brand using SQL
   @Query("select c from Car c where c.brand = ?1")
