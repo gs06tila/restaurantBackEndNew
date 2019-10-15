@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/RestaurantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/ResturantdatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/RestaurantRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/review.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +27,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
