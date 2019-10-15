@@ -6,7 +6,7 @@ import java.util.Date;
 @Entity
 public class Review {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long reviewId;
 
     @Column(precision=2, scale=1)
@@ -26,7 +26,7 @@ public class Review {
 
     public Review() {}
 
-    public Review(double rating, String reviewText, Date createdAt, Date updatedAt, Restaurant restaurant) {
+    public Review(double rating, String reviewText, Date createdAt, Date updatedAt, Restaurant restaurant, User user) {
         super();
         reviewId=0;
         this.rating = rating;
@@ -34,6 +34,8 @@ public class Review {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
         this.restaurant = restaurant;
+        this.user = user;
+
     }
 
     public double getRating() {
@@ -80,4 +82,9 @@ public class Review {
     public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user")
+    private User user;
+
 }

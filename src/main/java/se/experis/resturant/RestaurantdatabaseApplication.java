@@ -9,10 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import se.experis.resturant.domain.Restaurant;
-import se.experis.resturant.domain.RestaurantRepository;
-import se.experis.resturant.domain.Review;
-import se.experis.resturant.domain.ReviewRepository;
+import se.experis.resturant.domain.*;
 
 import java.text.SimpleDateFormat;
 
@@ -25,6 +22,9 @@ public class RestaurantdatabaseApplication {
 
 	@Autowired
 	private ReviewRepository revrepository;
+
+	@Autowired
+	private UserRepository userrepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestaurantdatabaseApplication.class, args);
@@ -43,7 +43,7 @@ public class RestaurantdatabaseApplication {
 			java.util.Date createdA = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").parse("2017-11-15 15:30:14.332");
 			java.util.Date updatedAt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").parse("2017-11-15 15:30:14.332");
 
-			// Add restaurant objcts and save these to db
+			// Add restaurant objcts and save to db
 			Restaurant res1 = new Restaurant("Bistro", "Fogdevägen 3B", "Thai", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 1, createdA, updatedAt);
 			Restaurant res2 = new Restaurant("BioBurger", "Burgervägen 3B", "American", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 0, createdA, updatedAt);
 			Restaurant res3 = new Restaurant("KorvGubben", "korvavägen 3B", "HotDog", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 1, createdA, updatedAt);
@@ -51,9 +51,18 @@ public class RestaurantdatabaseApplication {
 			repository.save(res2);
 			repository.save(res3);
 
-			revrepository.save(new Review(4.52, "Fucking awesome!!!", createdA, updatedAt, res1));
-			revrepository.save(new Review(2.4, "My girlfriend died after a visit here! the meat came from a man who apparently died of the disease. I really didn´t like her, so you guys deserves 2/10. ", createdA, updatedAt, res2));
-			revrepository.save(new Review(5.46, "KorvGubben knows how to serve a really juicy sausage", createdA, updatedAt, res3));
+			//Add user objects and save to db
+			User us1 = new User("gs06tila", "awesomemail", "secure", 1, createdA, updatedAt, 1);
+			User us2 = new User("Edis91", "funnyemail", "impossible", 2, createdA, updatedAt, 1);
+			User us3 = new User("LightMachineGun", "superemail", "12345", 3, createdA, updatedAt, 0);
+			userrepository.save(us1);
+			userrepository.save(us2);
+			userrepository.save(us3);
+
+			//Add review to db
+			revrepository.save(new Review(4.52, "Fucking awesome!!!", createdA, updatedAt, res1, us1));
+			revrepository.save(new Review(2.4, "My girlfriend died after a visit here! the meat came from a man who apparently died of the disease. I really didn´t like her, so you guys deserves 2/10. ", createdA, updatedAt, res2, us3));
+			revrepository.save(new Review(5.46, "KorvGubben knows how to serve a really juicy sausage", createdA, updatedAt, res3, us1));
 
 		};
 	}
