@@ -12,9 +12,11 @@ import se.experis.resturant.domain.ReviewRepository;
 public class ReviewController {
     @Autowired
     private ReviewRepository repository;
-
+/*
     @RequestMapping("/review")
     public Iterable<Review> getReviews() {
         return repository.findAll();
     }
+
+ */
 }

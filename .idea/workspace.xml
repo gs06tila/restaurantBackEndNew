@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="" />
+    <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/WebSecurityConfigurerAdapter/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resturant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/resturant.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +48,18 @@
         <item name="restaurang" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="restaurangdb: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="restaurang" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="restaurangdb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="review: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="restaurang" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -133,6 +156,7 @@
       <updated>1571137043901</updated>
       <workItem from="1571137048971" duration="4765000" />
       <workItem from="1571145766100" duration="5822000" />
+      <workItem from="1571174941243" duration="9523000" />
     </task>
     <task id="LOCAL-00001" summary="init and Restaurant class">
       <created>1571137593129</created>
@@ -162,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571167292195</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="uml">
+      <created>1571168140409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571168140409</updated>
+    </task>
+    <task id="LOCAL-00006" summary="uml">
+      <created>1571168148105</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571168148105</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +223,7 @@
     <MESSAGE value="init and Restaurant class" />
     <MESSAGE value="domain Restaurant and RestaurantRepository done" />
     <MESSAGE value="ReviewController have been created" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReviewController have been created" />
+    <MESSAGE value="uml" />
+    <option name="LAST_COMMIT_MESSAGE" value="uml" />
   </component>
 </project>

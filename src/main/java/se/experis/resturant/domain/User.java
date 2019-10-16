@@ -12,18 +12,19 @@ import java.util.List;
 public class User {
     @Id //Define primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Define automatically generated ID
+    @Column(nullable = false, updatable = false)
     private long userId;
 
-    @Column(length=128)
+    @Column(length=128, nullable = false, updatable = false)
     private String username;
 
     @Column(length = 128)
     private String email;
 
-    @Column(length = 20)
+    @Column(length = 20, nullable = false)
     private String password;
 
-    @Column(length = 1)
+    @Column(length = 1, nullable = false)
     private int role;
 
     @Basic
@@ -49,6 +50,14 @@ public class User {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
         this.active = active;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {

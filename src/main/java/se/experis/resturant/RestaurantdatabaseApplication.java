@@ -43,13 +43,7 @@ public class RestaurantdatabaseApplication {
 			java.util.Date createdA = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").parse("2017-11-15 15:30:14.332");
 			java.util.Date updatedAt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").parse("2017-11-15 15:30:14.332");
 
-			// Add restaurant objcts and save to db
-			Restaurant res1 = new Restaurant("Bistro", "Fogdevägen 3B", "Thai", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 1, createdA, updatedAt);
-			Restaurant res2 = new Restaurant("BioBurger", "Burgervägen 3B", "American", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 0, createdA, updatedAt);
-			Restaurant res3 = new Restaurant("KorvGubben", "korvavägen 3B", "HotDog", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 1, createdA, updatedAt);
-			repository.save(res1);
-			repository.save(res2);
-			repository.save(res3);
+
 
 			//Add user objects and save to db
 			User us1 = new User("gs06tila", "awesomemail", "secure", 1, createdA, updatedAt, 1);
@@ -58,6 +52,14 @@ public class RestaurantdatabaseApplication {
 			userrepository.save(us1);
 			userrepository.save(us2);
 			userrepository.save(us3);
+
+			// Add restaurant objcts and save to db
+			Restaurant res1 = new Restaurant("Bistro", "Fogdevägen 3B", "Thai", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 1, createdA, updatedAt, us1);
+			Restaurant res2 = new Restaurant("BioBurger", "Burgervägen 3B", "American", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 0, createdA, updatedAt, us1);
+			Restaurant res3 = new Restaurant("KorvGubben", "korvavägen 3B", "HotDog", "pdcokjw pokcq  pok   pojcsvw vww veww ev w", 1, createdA, updatedAt, us1);
+			repository.save(res1);
+			repository.save(res2);
+			repository.save(res3);
 
 			//Add review to db
 			revrepository.save(new Review(4.52, "Fucking awesome!!!", createdA, updatedAt, res1, us1));

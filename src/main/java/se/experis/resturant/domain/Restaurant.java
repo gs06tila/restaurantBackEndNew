@@ -38,7 +38,7 @@ public class Restaurant {
 
     public Restaurant() {}
 
-    public Restaurant(String name, String address, String category, String description, int active, java.util.Date createdAt, java.util.Date updatedAt) {
+    public Restaurant(String name, String address, String category, String description, int active, java.util.Date createdAt, java.util.Date updatedAt, User user) {
         super();
         restaurantId=0;
         this.name = name;
@@ -48,6 +48,7 @@ public class Restaurant {
         this.active = active;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+        this.user = user;
     }
 
     public String getName() {
