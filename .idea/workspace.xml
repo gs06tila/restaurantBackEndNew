@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/AccountCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/service/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/service/UserDetailServiceImpl.java" afterDir="false" />
+    <list default="true" id="53870795-2722-450a-9e22-4d0572578eee" name="Default Changelist" comment="jwt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resturant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/resturant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/RestaurantdatabaseApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/WebSecurityConfigurerAdapter/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/WebSecurityConfigurerAdapter/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/resturant/domain/UserRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +122,7 @@
       <updated>1571137043901</updated>
       <workItem from="1571137048971" duration="4765000" />
       <workItem from="1571145766100" duration="5822000" />
-      <workItem from="1571174941243" duration="20413000" />
+      <workItem from="1571174941243" duration="22753000" />
     </task>
     <task id="LOCAL-00001" summary="init and Restaurant class">
       <created>1571137593129</created>
@@ -183,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571214871497</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="jwt">
+      <created>1571225593841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571225593841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +205,7 @@
     <MESSAGE value="ReviewController have been created" />
     <MESSAGE value="uml" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="jwt" />
   </component>
 </project>
