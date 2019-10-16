@@ -1,14 +1,14 @@
-package se.experis.resturant.domain;
+package se.experis.restaurantdb.domain;
+
+
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Restaurant {
     @Id //Define primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Define automatically generated ID
@@ -28,17 +28,26 @@ public class Restaurant {
     @Column(length=1)
     private int active;
 
-    @Basic
     @Temporal(TemporalType.TIMESTAMP)
-    private java.util.Date createdAt;
+    @Column(updatable = false)
+    @org.hibernate.annotations.CreationTimestamp
+    private Date createdAt;
 
-    @Basic
+    @org.hibernate.annotations.UpdateTimestamp
     @Temporal(TemporalType.TIMESTAMP)
-    private java.util.Date updatedAt;
+    private Date updatedAt;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "restaurant")
+    @JsonIgnore
+    private List<Review> reviews;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "owner")
+    private User user;
 
     public Restaurant() {}
 
-    public Restaurant(String name, String address, String category, String description, int active, java.util.Date createdAt, java.util.Date updatedAt, User user) {
+    public Restaurant(String name, String address, String category, String description, int active, User user) {
         super();
         restaurantId=0;
         this.name = name;
@@ -46,8 +55,6 @@ public class Restaurant {
         this.category = category;
         this.description = description;
         this.active = active;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
         this.user = user;
     }
 
@@ -107,28 +114,19 @@ public class Restaurant {
         this.updatedAt = updatedAt;
     }
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "restaurant")
-    @JsonIgnore
-    private List<Review> reviews;
-
-    //Getters and setters
-    public List<Review> getReviews() {
-        return reviews;
-    }
-
-    public void setReviews(List<Review> reviews) {
-        this.reviews = reviews;
-    }
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "owner")
-    private User user;
-
     public User getUser() {
         return user;
     }
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
     }
 }

@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="resturant" />
+        <module name="cardatabase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="resturant" target="1.8" />
+      <module name="cardatabase" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="resturant" options="-parameters" />
+      <module name="cardatabase" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,6 +1,4 @@
-package se.experis.resturant.domain;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+package se.experis.restaurantdb.domain;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -8,7 +6,7 @@ import java.util.Date;
 @Entity
 public class Review {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long reviewId;
 
     @Column(precision=2, scale=1)
@@ -17,27 +15,32 @@ public class Review {
     @Column(columnDefinition = "TEXT")
     private String reviewText;
 
-    @Basic
     @Temporal(TemporalType.TIMESTAMP)
-    private java.util.Date createdAt;
+    @Column(updatable = false)
+    @org.hibernate.annotations.CreationTimestamp
+    private Date createdAt;
 
-    @Basic
+    @org.hibernate.annotations.UpdateTimestamp
     @Temporal(TemporalType.TIMESTAMP)
-    private java.util.Date updatedAt;
+    private Date updatedAt;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurant")
+    private Restaurant restaurant;
 
-    public Review() {}
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user")
+    private User user;
 
-    public Review(double rating, String reviewText, Date createdAt, Date updatedAt, Restaurant restaurant, User user) {
+    public Review(){}
+
+    public Review(double rating, String reviewText, Restaurant restaurant, User user) {
         super();
         reviewId=0;
         this.rating = rating;
         this.reviewText = reviewText;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
         this.restaurant = restaurant;
         this.user = user;
-
     }
 
     public double getRating() {
@@ -56,14 +59,6 @@ public class Review {
         this.reviewText = reviewText;
     }
 
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
     public Date getUpdatedAt() {
         return updatedAt;
     }
@@ -72,11 +67,6 @@ public class Review {
         this.updatedAt = updatedAt;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "restaurant")
-    private Restaurant restaurant;
-
-    //Getter and setter
     public Restaurant getRestaurant() {
         return restaurant;
     }
@@ -85,8 +75,11 @@ public class Review {
         this.restaurant = restaurant;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user")
-    private User user;
+    public User getUser() {
+        return user;
+    }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

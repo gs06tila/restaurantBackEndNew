@@ -1,4 +1,4 @@
-package se.experis.resturant.domain;
+package se.experis.restaurantdb.domain;
 
 import org.springframework.data.repository.CrudRepository;
 
