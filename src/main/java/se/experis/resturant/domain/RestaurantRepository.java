@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface git RestaurantRepository extends CrudRepository<Restaurant, Long> {
+public interface RestaurantRepository extends CrudRepository<Restaurant, Long> {
     //Fetch restaurants by category
     //List<Restaurant> findByCategory(String category);
 
