@@ -46,9 +46,9 @@ public class RestaurantdatabaseApplication {
 
 
 			//Add user objects and save to db
-			User us1 = new User("gs06tila", "awesomemail", "secure", 1, createdA, updatedAt, 1);
-			User us2 = new User("Edis91", "funnyemail", "impossible", 2, createdA, updatedAt, 1);
-			User us3 = new User("LightMachineGun", "superemail", "12345", 3, createdA, updatedAt, 0);
+			User us1 = new User("admin", "$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG", "admin", "ADMIN", createdA, updatedAt, 1);
+			User us2 = new User("user", "$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG", "user", "USER", createdA, updatedAt, 1);
+			User us3 = new User("LightMachineGun", "superemail", "12345", "admin", createdA, updatedAt, 0);
 			userrepository.save(us1);
 			userrepository.save(us2);
 			userrepository.save(us3);

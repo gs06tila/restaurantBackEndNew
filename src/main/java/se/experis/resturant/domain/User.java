@@ -21,11 +21,11 @@ public class User {
     @Column(length = 128)
     private String email;
 
-    @Column(length = 20, nullable = false)
+    @Column(nullable = false)
     private String password;
 
-    @Column(length = 1, nullable = false)
-    private int role;
+    @Column(length = 50, nullable = false)
+    private String role;
 
     @Basic
     @Temporal(TemporalType.TIMESTAMP)
@@ -40,7 +40,7 @@ public class User {
 
     public User() {}
 
-    public User(String username, String email, String password, int role, Date createdAt, Date updatedAt, int active) {
+    public User(String username, String password, String email, String role, Date createdAt, Date updatedAt, int active) {
         super();
         userId=0;
         this.username = username;
@@ -84,11 +84,11 @@ public class User {
         this.password = password;
     }
 
-    public int getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(int role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
