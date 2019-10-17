@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5a3fb43-f40f-4696-9cca-25e33e71900f" name="Default Changelist" comment="" />
+    <list default="true" id="b5a3fb43-f40f-4696-9cca-25e33e71900f" name="Default Changelist" comment=" Cross-Origin Resource Sharing filter in our security configuration class. This is needed for the frontend, which is sending requests from the other origin.">
+      <change afterPath="$PROJECT_DIR$/cardatabase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurangdb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/service/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/se/experis/restaurantdb/RestaurantdatabaseApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/cardatabase.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/cardatabase.kotlin_module" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +149,7 @@
       <updated>1571237624161</updated>
       <workItem from="1571237649330" duration="8051000" />
       <workItem from="1571262037606" duration="11100000" />
+      <workItem from="1571302042812" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary=" Cross-Origin Resource Sharing filter in our security configuration class. This is needed for the frontend, which is sending requests from the other origin.">
       <created>1571264354352</created>
@@ -176,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571301494524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary=" Cross-Origin Resource Sharing filter in our security configuration class. This is needed for the frontend, which is sending requests from the other origin.">
+      <created>1571302111213</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571302111213</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
