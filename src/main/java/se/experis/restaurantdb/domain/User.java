@@ -9,9 +9,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User {
 	@Id //Define primary key
-	@GeneratedValue(strategy = GenerationType.IDENTITY) //Define automatically generated ID
+	@GeneratedValue(strategy = GenerationType.AUTO) //Define automatically generated ID
 	@Column(nullable = false, updatable = false)
 	private long userId;
 
@@ -40,7 +41,13 @@ public class User {
 	private int active;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+	@JsonIgnore
     private List<Review> reviews;
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+	@JsonIgnore
+	private List<Restaurant> restaurants;
+
 
 
 	public User() {}
@@ -114,9 +121,27 @@ public class User {
 	//Getters and setters
 
 
+	public long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+
+	public List<Review> getReviews() {
+		return reviews;
+	}
 
 	public void setReviews(List<Review> reviews) {
 		this.reviews = reviews;
 	}
 
+	public List<Restaurant> getRestaurants() {
+		return restaurants;
+	}
+
+	public void setRestaurants(List<Restaurant> restaurants) {
+		this.restaurants = restaurants;
+	}
 }

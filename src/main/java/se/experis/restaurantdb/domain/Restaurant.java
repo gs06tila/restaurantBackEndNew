@@ -3,15 +3,17 @@ package se.experis.restaurantdb.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Restaurant {
     @Id //Define primary key
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Define automatically generated ID
+    @GeneratedValue(strategy = GenerationType.AUTO) //Define automatically generated ID
     private long restaurantId;
 
     @Column(length=128)
@@ -38,13 +40,24 @@ public class Restaurant {
     private Date updatedAt;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "restaurant")
+    @JsonIgnore
     private List<Review> reviews;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "owner")
+    @JoinColumn(name = "user")
     private User user;
 
     public Restaurant() {}
+
+    public Restaurant(String name, String address, String category, String description, int active) {
+        super();
+        restaurantId=0;
+        this.name = name;
+        this.address = address;
+        this.category = category;
+        this.description = description;
+        this.active = active;
+    }
 
     public Restaurant(String name, String address, String category, String description, int active, User user) {
         super();
@@ -127,5 +140,13 @@ public class Restaurant {
 
     public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
+    }
+
+    public long getRestaurantId() {
+        return restaurantId;
+    }
+
+    public void setRestaurantId(long restaurantId) {
+        this.restaurantId = restaurantId;
     }
 }

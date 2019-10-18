@@ -2,11 +2,12 @@ package se.experis.restaurantdb.domain;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Review {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private long reviewId;
 
     @Column(precision=2, scale=1)
@@ -29,10 +30,17 @@ public class Review {
     private Restaurant restaurant;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user")
-    private User user;
+    @JoinColumn(name = "userreview")
+    private  User user;
 
     public Review(){}
+
+    public Review(double rating, String reviewText, Date createdAt, Date updatedAt) {
+        this.rating = rating;
+        this.reviewText = reviewText;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
 
     public Review(double rating, String reviewText, Restaurant restaurant, User user) {
         super();
@@ -81,5 +89,21 @@ public class Review {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public long getReviewId() {
+        return reviewId;
+    }
+
+    public void setReviewId(long reviewId) {
+        this.reviewId = reviewId;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
 }
