@@ -54,12 +54,19 @@ public class User {
 
 	public User(String user, String password, String email, String role, int active) {
 		super();
-		userId=0;
 		this.user = user;
 		this.email = email;
 		this.password = password;
 		this.role = role;
 		this.active = active;
+	}
+
+	public long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
 	}
 
 	public String getUser() {
@@ -120,14 +127,6 @@ public class User {
 
 	//Getters and setters
 
-
-	public long getUserId() {
-		return userId;
-	}
-
-	public void setUserId(long userId) {
-		this.userId = userId;
-	}
 
 	public List<Review> getReviews() {
 		return reviews;
