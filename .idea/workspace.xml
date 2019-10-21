@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5a3fb43-f40f-4696-9cca-25e33e71900f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/web/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/RepositoryConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/ReviewRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/experis/restaurantdb/domain/UserRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +149,7 @@
       <workItem from="1571237649330" duration="8051000" />
       <workItem from="1571262037606" duration="11100000" />
       <workItem from="1571302042812" duration="338000" />
-      <workItem from="1571396585462" duration="23499000" />
+      <workItem from="1571396585462" duration="24793000" />
     </task>
     <task id="LOCAL-00001" summary=" Cross-Origin Resource Sharing filter in our security configuration class. This is needed for the frontend, which is sending requests from the other origin.">
       <created>1571264354352</created>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571648234656</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="date">
+      <created>1571650294133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571650294133</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +251,7 @@
     <MESSAGE value=" Cross-Origin Resource Sharing filter in our security configuration class. This is needed for the frontend, which is sending requests from the other origin." />
     <MESSAGE value="top5" />
     <MESSAGE value="data" />
-    <option name="LAST_COMMIT_MESSAGE" value="data" />
+    <MESSAGE value="date" />
+    <option name="LAST_COMMIT_MESSAGE" value="date" />
   </component>
 </project>

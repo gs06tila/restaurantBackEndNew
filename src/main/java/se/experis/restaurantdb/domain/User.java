@@ -9,11 +9,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
+@Table
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User {
 	@Id //Define primary key
-	@GeneratedValue(strategy = GenerationType.AUTO) //Define automatically generated ID
-	private long userId;
+	@Column()
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //Define automatically generated ID
+	public int userId;
 
 	@Column(length=128, nullable = false, updatable = false)
 	private String user;
@@ -61,11 +63,11 @@ public class User {
 		this.active = active;
 	}
 
-	public long getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 
-	public void setUserId(long userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 
