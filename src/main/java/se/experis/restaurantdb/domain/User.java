@@ -13,7 +13,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class User {
 	@Id //Define primary key
 	@GeneratedValue(strategy = GenerationType.AUTO) //Define automatically generated ID
-	@Column(nullable = false, updatable = false)
 	private long userId;
 
 	@Column(length=128, nullable = false, updatable = false)
@@ -54,6 +53,7 @@ public class User {
 
 	public User(String user, String password, String email, String role, int active) {
 		super();
+		userId = 0;
 		this.user = user;
 		this.email = email;
 		this.password = password;

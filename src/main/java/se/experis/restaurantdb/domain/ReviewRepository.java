@@ -16,5 +16,6 @@ import org.springframework.data.repository.query.Param;
 public interface ReviewRepository extends CrudRepository<Review, Long> {
 
     Iterable<Review> findTop5ByOrderByRatingDesc();
-
+    Iterable<Review> findTop5ByOrderByCreatedAtAsc();
+    //Iterable<Review> findTop5ByOrOrderByCreatedAtDesc();
 }
