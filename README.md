@@ -5,6 +5,21 @@
  
  
  ### API
+ #### Restaurants
 ```
-ddd 
+http://localhost:8081/api/restaurants 
+```
+
+ #### Reviews
+```
+http://localhost:8081/api/reviews
+```
+##### Top5 Reviews
+```
+http://localhost:8081/api/reviews/search/findTop5ByOrderByRatingDesc
+```
+
+ #### Users
+```
+http://localhost:8081/api/users
 ```
