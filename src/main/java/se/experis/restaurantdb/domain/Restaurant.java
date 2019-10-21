@@ -22,6 +22,9 @@ public class Restaurant {
     @Column(columnDefinition = "TEXT")
     private String address;
 
+    @Column(columnDefinition = "TEXT")
+    private String city;
+
     private String category;
 
     @Column(columnDefinition = "TEXT")
@@ -49,21 +52,23 @@ public class Restaurant {
 
     public Restaurant() {}
 
-    public Restaurant(String name, String address, String category, String description, int active) {
+    public Restaurant(String name, String address, String city, String category, String description, int active) {
         super();
         restaurantId=0;
         this.name = name;
         this.address = address;
+        this.city = city;
         this.category = category;
         this.description = description;
         this.active = active;
     }
 
-    public Restaurant(String name, String address, String category, String description, int active, User user) {
+    public Restaurant(String name, String address, String city, String category, String description, int active, User user) {
         super();
         restaurantId=0;
         this.name = name;
         this.address = address;
+        this.city = city;
         this.category = category;
         this.description = description;
         this.active = active;
@@ -84,6 +89,14 @@ public class Restaurant {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getCategory() {

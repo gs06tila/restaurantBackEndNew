@@ -13,9 +13,9 @@ public class ReviewController {
     @Autowired
     private ReviewRepository repository;
 
-    @RequestMapping("/api/reviews/top")
+    /*@RequestMapping("/api/reviews/top")
     public Iterable<Review> getReviews() {
         return repository.findTop5ByOrderByRatingDesc();
         //return repository.findAll();
-    }
+    }*/
 }
