@@ -19,6 +19,12 @@ http://localhost:8081/api/reviews
 http://localhost:8081/api/reviews/search/findTop5ByOrderByRatingDesc
 ```
 
+##### Latest 5 dates
+```
+http://localhost:8081/api/reviews/search/findAllByOrderByCreatedAtAsc
+```
+
+
  #### Users
 ```
 http://localhost:8081/api/users
